@@ -51,7 +51,7 @@ if submitted:
         item_per_pallet = 1
     storage_rate=(stock+inbound-orders)/(item_per_pallet)*1.5*30
     productss=(stock+inbound-orders)
-    pallet_count=(stock+inbound-orders)/(item_per_pallet)*1.5
+    pallet_count=(stock+inbound-orders)/(item_per_pallet)
     "Quantity", productss
     "Pallets", pallet_count
 
