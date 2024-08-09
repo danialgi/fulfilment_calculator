@@ -115,8 +115,8 @@ if submitted:
         st.header(f" RM {estimated_total:.2f}")
 
 "__________________________________________________________________________________________________________________________"
-fulfilment_image1 = Image.open(r"C:\Users\Polaris Net\Downloads\ilovepdf_pages-to-jpg\Fulfilment Rate.pptx_page-0001.jpg")
-fulfilment_image2 = Image.open(r"C:\Users\Polaris Net\Downloads\ilovepdf_pages-to-jpg\Fulfilment Rate.pptx_page-0002.jpg")
+fulfilment_image1 = Image.open("Fulfilment Rate.pptx_page-0001.jpg")
+fulfilment_image2 = Image.open("Fulfilment Rate.pptx_page-0002.jpg")
 __, colA, __ = st.columns([1,2,1])
 with colA:
     st.image(fulfilment_image1, use_column_width=True)
