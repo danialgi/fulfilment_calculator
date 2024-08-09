@@ -50,10 +50,10 @@ if submitted:
     if item_per_pallet <= 0:
         item_per_pallet = 1
     storage_rate=(stock+inbound-orders)/(item_per_pallet)*1.5*30
-  productss=(stock+inbound-orders)
-  pallet_count=(stock+inbound-orders)/(item_per_pallet)*1.5*
-  "Quantity", productss
-  "Pallets", pallet_count
+    productss=(stock+inbound-orders)
+    pallet_count=(stock+inbound-orders)/(item_per_pallet)*1.5*
+    "Quantity", productss
+    "Pallets", pallet_count
 
     if weight == "below 1kg":
         inbound_charge=inbound*1
