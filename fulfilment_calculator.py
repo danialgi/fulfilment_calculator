@@ -1,4 +1,4 @@
-import streamlit as st
+  import streamlit as st
 from PIL import Image
 import math
 
@@ -46,6 +46,7 @@ if submitted:
         st.stop()
     "__________________________________________________________________________________________________________________________"
     item_per_pallet = calculate_box_fit(*pallet, *(length, width, height))
+    "Item per Pallet", item_per_pallet
     if item_per_pallet <= 0:
         item_per_pallet = 1
     storage_rate=(stock+inbound-orders)/(item_per_pallet)*1.5*30
