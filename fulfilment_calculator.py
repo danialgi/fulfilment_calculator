@@ -19,7 +19,7 @@ st.write("🚚 Genuine Inside (M) Sdn. Bhd.")
 st.title("Fulfilment Calculator 🧮")
 
 "__________________________________________________________________________________________________________________________"
-weight = st.selectbox("Product Weight", ["below 1kg", "1-2.99kg", "3-10kg", "above 10kg"], index=None)
+weight = st.selectbox("Product Weight", ["below 1kg", "1kg to 2.99kg", "3kg to 10kg", "above 10kg"], index=None)
 colA, colB, colC = st.columns([1,1,1])
 with colA:
     length = st.number_input("Length (mm):", value=0)
@@ -58,7 +58,7 @@ if submitted:
         elif delivery_option == "East Malaysia":
             delivery_charge=orders*15
 
-    elif weight == "1-2.99kg":
+    elif weight == "1kg to 2.99kg":
         inbound_charge=inbound*2
         handling_charge=orders*2
         if delivery_option == "West Malaysia":
@@ -66,7 +66,7 @@ if submitted:
         elif delivery_option == "East Malaysia":
             delivery_charge=orders*45
 
-    elif weight == "3-10kg":
+    elif weight == "3kg to 10kg":
         inbound_charge=inbound*3
         handling_charge=orders*3
         if delivery_option == "West Malaysia":
