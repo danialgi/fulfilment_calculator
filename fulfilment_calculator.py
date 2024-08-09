@@ -51,8 +51,8 @@ if submitted:
     storage_rate=(stock+inbound-orders)/(item_per_pallet)*1.5*30
 
     if weight == "below 1kg":
-        inbound_charge=inbound*1
-        handling_charge=orders*1
+        inbound_charge=inbound*2
+        handling_charge=orders*2
         if delivery_option == "West Malaysia":
             delivery_charge=orders*6.5
         elif delivery_option == "East Malaysia":
